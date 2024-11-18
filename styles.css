@@ -1,1 +1,20 @@
 /*  your css code here. If applicable */
+#container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;  
+}
+
+#container::before {
+    content: "Before: ";
+    color: #f00;          
+    font-size: 20px;      
+    margin-right: 10px;   
+}
+
+#container::after {
+    content: " After!";
+    color: #f00;          
+    font-size: 20px;      
+    margin-left: 10px;    
+}
